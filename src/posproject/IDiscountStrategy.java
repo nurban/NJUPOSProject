@@ -7,5 +7,5 @@ package posproject;
  * Version: Beta (not fully functional yet)
  */
 public interface IDiscountStrategy {
-   public abstract void getDiscount(int quantity, double price);
+   public abstract double getDiscount(double price, int quantity);
 }
