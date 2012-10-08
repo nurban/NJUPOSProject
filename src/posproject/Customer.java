@@ -4,7 +4,7 @@ package posproject;
 /**
  *
  * @author Neil Urban
- * Version: Beta (not fully functional yet)
+ * Version: 1.0
  */
 public class Customer {
     private String customerID;
@@ -37,6 +37,7 @@ public class Customer {
      * @return the customerName
      */
     public String getCustomerName() {
+       
         return customerName;
     }
 

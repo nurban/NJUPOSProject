@@ -4,7 +4,7 @@ package posproject;
 /**
  *
  * @author Neil Urban
- * Version: Beta (not fully functional yet)
+ * Version: 1.0
  */
 public class StartUp {
 

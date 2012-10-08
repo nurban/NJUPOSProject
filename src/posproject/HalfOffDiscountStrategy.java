@@ -1,12 +1,10 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package posproject;
 
 /**
  *
  * @author nurban
+ * Version: 1.0
  */
 public class HalfOffDiscountStrategy implements IDiscountStrategy {
     //final variable which sets this discount rate to 50%

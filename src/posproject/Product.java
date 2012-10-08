@@ -3,13 +3,10 @@ package posproject;
 
 import java.text.NumberFormat;
     
-  
-
-// Retrieves the amount of the Discount to a LineItem call
 /**
  *
  * @author Neil Urban
- * Version: Beta (not fully functional yet)
+ * Version: 1.0
  */
 public class Product {
     private String productName;

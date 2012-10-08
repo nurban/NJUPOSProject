@@ -4,13 +4,13 @@ package posproject;
 /**
  *
  * @author Neil Urban
- * Version: Beta (not fully functional yet)
+ * Version: 1.0
  */
 public class NoDiscountStrategy implements IDiscountStrategy {
     //there is no discount here.
     
     @Override
     public double getDiscount(double price, int quantity) {
-        return quantity * price;
+        return 0;
     }
 }

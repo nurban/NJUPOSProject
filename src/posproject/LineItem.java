@@ -5,7 +5,7 @@ import java.text.NumberFormat;
 /**
  *
  * @author Neil Urban
- * Version: Beta (not fully functional yet)
+ * Version: 1.0
  */
 public class LineItem {
     private int quantity;
@@ -25,16 +25,16 @@ public class LineItem {
         // be reset
         double discount = getProduct().getSaleDiscount(getQuantity());
 
-        String runningTotal = "";
-        runningTotal += product.getProductName() + "  ";
-        runningTotal += product.getProductDescription() + "   ";
-        runningTotal += this.getQuantity() + "   ";
-        runningTotal += currencyFormat.format(product.getProductPrice()) + "     ";
-        runningTotal += currencyFormat.format(getTotalBeforeDiscount()) + "   ";
-        runningTotal += currencyFormat.format(discount) + "     ";
-        runningTotal += currencyFormat.format(getTotalBeforeDiscount() - discount);
+        String itemDetail = "";
+        itemDetail += product.getProductName() + "  ";
+        itemDetail += product.getProductDescription() + "   ";
+        itemDetail += this.getQuantity() + "   ";
+        itemDetail += currencyFormat.format(product.getProductPrice()) + "     ";
+        itemDetail += currencyFormat.format(getTotalBeforeDiscount()) + "   ";
+        itemDetail += currencyFormat.format(discount) + "     ";
+        itemDetail += currencyFormat.format(getTotalBeforeDiscount() - discount);
 
-        return runningTotal;
+        return itemDetail;
     }
 
 
@@ -47,9 +47,10 @@ public class LineItem {
     }
    
     public final double getDiscountedAmount(){
-        return this.getProduct().getSaleDiscount(this.getQuantity());
+//        return this.getProduct().getSaleDiscount(this.getQuantity());
+        return this.product.getSaleDiscount(this.getQuantity());
     }
-
+   
     /**
      * @return the quantity
      */
